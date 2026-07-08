@@ -1,0 +1,47 @@
+:root{
+  --bg1:#1b0f2e; --bg2:#2d1854; --gold:#e8c07d; --gold-soft:#f3dfb0;
+  --card:#2a1a47; --card-border:#4a2f7a; --text:#f2ecff; --muted:#c3b3e6;
+  --accent:#8a5cf6; --accent2:#d84fd6;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; min-height:100vh; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+  background:radial-gradient(circle at 20% 10%, #3a2166 0%, var(--bg1) 55%, #0d0718 100%);
+  color:var(--text); padding:24px 16px 60px;
+  line-height:1.7;
+}
+.wrap{max-width:760px; margin:0 auto;}
+.site-nav{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:28px;}
+.site-nav a.brand{color:var(--gold); font-weight:800; font-size:1.15rem; text-decoration:none;}
+.site-nav .links{display:flex; gap:14px; flex-wrap:wrap; font-size:0.85rem;}
+.site-nav .links a{color:var(--muted); text-decoration:none;}
+.site-nav .links a:hover{color:var(--gold-soft);}
+.card{
+  background:var(--card); border:1px solid var(--card-border); border-radius:16px;
+  padding:26px 24px; margin-bottom:20px;
+}
+h1{color:var(--gold); font-size:1.6rem; margin:0 0 6px;}
+h2{color:var(--gold-soft); font-size:1.15rem; margin:28px 0 10px;}
+h3{color:var(--gold-soft); font-size:1.02rem; margin:20px 0 8px;}
+p{margin:0 0 14px; font-size:0.98rem; color:var(--text);}
+.subtitle{color:var(--muted); font-size:0.88rem; margin-bottom:24px;}
+a{color:var(--accent2);}
+ul, ol{padding-left:22px; margin:0 0 14px;}
+li{margin-bottom:6px; font-size:0.98rem;}
+.tag{display:inline-block; background:#3a2566; border:1px solid var(--card-border); padding:4px 12px; border-radius:999px; font-size:0.78rem; color:var(--gold-soft); margin:2px 4px 2px 0;}
+.article-list{list-style:none; padding:0; margin:0;}
+.article-list li{
+  background:var(--card); border:1px solid var(--card-border); border-radius:14px;
+  padding:16px 18px; margin-bottom:12px;
+}
+.article-list a{color:var(--gold-soft); text-decoration:none; font-weight:700; font-size:1rem;}
+.article-list a:hover{color:var(--gold);}
+.article-list .desc{color:var(--muted); font-size:0.85rem; margin-top:6px;}
+.back-link{display:inline-block; margin:24px 0 0; color:var(--muted); text-decoration:none; font-size:0.88rem;}
+.back-link:hover{color:var(--gold-soft);}
+footer{text-align:center; margin-top:40px; color:var(--muted); font-size:0.75rem; opacity:0.7;}
+footer a{color:var(--muted);}
+.disclaimer-box{
+  font-size:0.8rem; color:var(--muted); line-height:1.6; margin-top:24px;
+  border-top:1px dashed var(--card-border); padding-top:16px;
+}
